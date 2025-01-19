@@ -22,16 +22,16 @@ public class PrimeCheckTest {
   // --------------------------------------------------------------- //
   @Test
   public void testPrimes() {
-    assertTrue("Test 0: ", PrimeCheck.isPrime(97));
-    assertTrue("Test 1: ", PrimeCheck.isPrime(1427));
-    assertTrue("Test 2: ", PrimeCheck.isPrime(5569));
+    assertEquals("Test 0: ", true, PrimeCheck.isPrime(97));
+    assertEquals("Test 1: ", true, PrimeCheck.isPrime(1427));
+    assertEquals("Test 2: ", true, PrimeCheck.isPrime(5569));
   }
 
   // --------------------------------------------------------------- //
   @Test
   public void testNonPrimes() {
-    assertFalse("Test 0: ", PrimeCheck.isPrime(5570));
-    assertFalse("Test 1: ", PrimeCheck.isPrime(4));
-    assertFalse("Test 2: ", PrimeCheck.isPrime(4444));
+    assertEquals("Test 0: ", false, PrimeCheck.isPrime(5570));
+    assertEquals("Test 1: ", false, PrimeCheck.isPrime(4));
+    assertEquals("Test 2: ", false, PrimeCheck.isPrime(4444));
   }
 }
